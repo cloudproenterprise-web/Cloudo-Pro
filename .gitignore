@@ -1,0 +1,20 @@
+# deps lokal (jangan commit)
+node_modules/
+
+# data runtime lokal (jangan commit — di Vercel pakai KV/DB)
+db.json
+
+# backup & file sementara
+server.static.bak.js
+*.tmp.js
+smoke*.js
+seedcheck.js
+apitest.js
+bootlog.js
+
+# OS & editor
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/tasks.json
+!.vscode/settings.json

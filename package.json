@@ -1,0 +1,9 @@
+{
+  "name": "cloudo-pro",
+  "version": "1.0.0",
+  "description": "CLOUDO PRO - Hosting & VPS Management Suite",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  }
+}

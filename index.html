@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>CLOUDO PRO — Hosting & VPS Management Suite</title>
+  <meta name="description" content="Platform manajemen hosting & VPS enterprise dengan fitur reseller dan multi-panel." />
+  <meta name="theme-color" content="#070a12" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="CLOUDO PRO" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%237c5cff' stroke-width='2'%3E%3Cpath d='M17.5 19a4.5 4.5 0 0 0 .5-8.98A6 6 0 0 0 6.2 9.2A4 4 0 0 0 7 19z'/%3E%3C/svg%3E" />
+</head>
+<body>
+  <div class="scrim" id="scrim"></div>
+
+  <div class="app">
+    <!-- ============ SIDEBAR ============ -->
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">
+        <div class="brand-logo">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M17.5 19a4.5 4.5 0 0 0 .5-8.98A6 6 0 0 0 6.2 9.2A4 4 0 0 0 7 19z"/>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <h1>CLOUDO <span>PRO</span></h1>
+          <p>Control Master</p>
+        </div>
+      </div>
+
+      <nav class="nav" id="nav"><!-- nav rendered by app.js --></nav>
+
+      <div class="sidebar-foot" id="sidebarFoot">
+        <div class="plan-card" id="planCard">
+          <div class="pc-top">
+            <span class="pc-title">Paket Enterprise</span>
+            <span class="pc-plan">ACTIVE</span>
+          </div>
+          <div class="usage-row"><span>VPS Terpakai</span><span>24/50</span></div>
+          <div class="usage-bar"><div style="width:48%"></div></div>
+          <div class="usage-row"><span>Disk Global</span><span>1.8 / 4 TB</span></div>
+          <div class="usage-bar"><div style="width:45%"></div></div>
+          <a href="#billing" class="btn btn-primary btn-sm" style="width:100%;margin-top:6px">Upgrade Paket</a>
+        </div>
+      </div>
+    </aside>
+
+    <!-- ============ MAIN ============ -->
+    <div class="main">
+      <!-- TOPBAR -->
+      <header class="topbar">
+        <button class="icon-btn menu-toggle" id="menuToggle" aria-label="Menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+        </button>
+
+        <div class="search">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+          <input type="text" id="globalSearch" placeholder="Cari server, domain, invoice, tiket..." />
+          <kbd>⌘K</kbd>
+        </div>
+
+        <div class="topbar-actions">
+          <button class="icon-btn" title="Notifikasi" id="btnNotif">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg>
+            <span class="notif-dot"></span>
+          </button>
+          <button class="icon-btn" title="Status Sistem" id="btnStatus">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+          </button>
+          <div class="user-chip" id="userChip">
+            <div class="avatar" id="avatar">RP</div>
+            <div class="uc-meta">
+              <div class="uc-name" id="userName">Rizky Pratama</div>
+              <div class="uc-role" id="userRole">Root Administrator</div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- PAGE CONTENT -->
+      <main class="content" id="content"><!-- rendered by app.js --></main>
+    </div>
+  </div>
+
+  <!-- MODAL -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal" id="modal"><!-- modal content --></div>
+  </div>
+
+  <!-- TOASTS -->
+  <div class="toasts" id="toasts"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

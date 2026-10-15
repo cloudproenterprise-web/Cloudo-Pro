@@ -1,0 +1,19 @@
+{
+  "name": "CLOUDO PRO - Hosting & VPS Management",
+  "short_name": "CLOUDO",
+  "description": "Kelola hosting, VPS & reseller dari HP Android.",
+  "start_url": "/#dashboard",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#070a12",
+  "theme_color": "#070a12",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Crect width='512' height='512' rx='120' fill='%237c5cff'/%3E%3Cpath d='M360 340a90 90 0 0 0 10-179A120 120 0 0 0 144 183a80 80 0 0 0 14 157z' fill='none' stroke='white' stroke-width='28' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

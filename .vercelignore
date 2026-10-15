@@ -1,0 +1,6 @@
+# Cloudo Pro — abaikan file lokal saat deploy
+db.json
+server.static.bak.js
+*.tmp.js
+node_modules/
+.git/
